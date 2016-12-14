@@ -1,0 +1,9 @@
+[package]
+name = "cloudwatch-metrics-test"
+version = "0.1.0"
+authors = ["Kei Tsuji <ktsujister@gmail.com>"]
+
+[dependencies]
+log = "0.3"
+env_logger = { version = "0.3", default-features = false }
+rusoto = { git = "https://github.com/ktsujister/rusoto.git", branch = "add-cloudwatch-support", features = ["cloudwatch"] }
